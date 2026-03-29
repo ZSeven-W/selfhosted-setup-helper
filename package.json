@@ -1,0 +1,31 @@
+{
+  "name": "selfhosted-setup-helper",
+  "version": "1.0.0",
+  "description": "AI Agent Selfhosted One-Click Deployment Wizard — guided setup for Docker-based services",
+  "main": "dist/index.js",
+  "bin": {
+    "selfhosted": "./dist/index.js"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["docker", "selfhosted", "deployment", "wizard", "cli"],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "inquirer": "^9.2.23",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
